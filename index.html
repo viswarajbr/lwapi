@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+</head>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+                
+      <section class="p-5">
+          <div class="rounded-2xl px-4 md:px-14 pb-16 bg-center bg-no-repeat bg-cover relative" style="background-image: url('images/photo-1542663210-8581a465ddd1-1718440887366.webp')">
+              <div x-data="{ mobileNavOpen: false }">
+                  <nav class="relative p-4">
+                      <div class="flex items-center justify-between">
+                          <div class="flex items-center gap-3">
+                              <a href="#" class="inline-block">
+                                  <img class="h-7" src="images/DACE-1-png-1718440532662.webp" alt="">
+                              </a>
+                              
+                          </div>
+                          
+                          <a href="https://techsolutions.liveas.in/dace/index.php" class="border border-gray-200 px-5 hover:bg-gray-50 focus:ring-4 focus:ring-gray-200 hidden xl:inline-flex items-center justify-center gap-2 transition duration-200 py-3 bg-orange-400">
+                              <span class="text-sm font-semibold tracking-tight text-white">REGISTER</span>
+                              
+                          </a>
+                          <!-- <a x-on:click.prevent="mobileNavOpen = !mobileNavOpen" href="#" class="xl:hidden">
+                              <svg class="navbar-burger text-white" width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="56" height="56" rx="28" fill="currentColor"></rect>
+                                <path d="M37 32H19M37 24H19" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                          </a> -->
+                      </div>
+                  </nav>
+                  <!-- <div :class="{'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-xs z-50"> -->
+                      <!-- <div x-on:click.prevent="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-black opacity-20"></div> -->
+                      <!-- <nav class="relative p-8 w-full h-full bg-white overflow-y-auto">
+                          <div class="flex items-center justify-between">
+                              <a href="#" class="inline-block">
+                                  <img class="h-7" src="consulty-assets/logos/consulty-logo2.svg" alt="">
+                              </a>
+                              <a x-on:click.prevent="mobileNavOpen = !mobileNavOpen" href="#">
+                                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
+                              </a>
+                          </div>
+                          <ul class="flex flex-col gap-12 py-12">
+                              <li>
+                                  <a href="#" class="inline-block py-2 px-3 hover:bg-gray-50 transition duration-200 rounded-full">
+                                      <div class="flex items-center gap-2">
+                                          <span class="text-sm font-medium tracking-tight">Products</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewbox="0 0 17 16" fill="none">
+                                              <path d="M12.848 6L8.18132 10.6667L3.51465 6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </svg>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inline-block py-2 px-3 hover:bg-gray-50 transition duration-200 text-sm font-medium tracking-tight rounded-full">Case Studies</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inline-block py-2 px-3 hover:bg-gray-50 transition duration-200 text-sm font-medium tracking-tight rounded-full">Support</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="inline-block py-2 px-3 hover:bg-gray-50 transition duration-200 rounded-full">
+                                      <div class="flex items-center gap-2">
+                                          <span class="text-sm font-medium tracking-tight">Resources</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewbox="0 0 17 16" fill="none">
+                                              <path d="M12.848 6L8.18132 10.6667L3.51465 6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </svg>
+                                      </div>
+                                  </a>
+                              </li>
+                          </ul>
+                          <div class="flex flex-col gap-4">
+                              <a href="#" class="rounded-full bg-black px-5 py-3 h-14 hover:bg-orange-600 focus:bg-orange-500 focus:ring-4 focus:ring-orange-200 inline-flex items-center justify-center gap-2 transition duration-200">
+                                  <span class="text-white text-sm font-semibold tracking-tight">Get A Free Consultation</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                                      <path d="M14 6.66666H7.33333C4.38781 6.66666 2 9.05447 2 12V13.3333M14 6.66666L10 10.6667M14 6.66666L10 2.66666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
+                              </a>
+                          </div>
+                      </nav> -->
+                  <!-- </div> -->
+              <!-- </div> -->
+              <div class="pt-80">
+                  <h1 class="font-heading tracking-tight text-5xl md:text-7xl text-white font-medium max-w-xs md:max-w-xl mb-6">Welcome to DACE Program by LiveAs Technologies</h1>
+                  <p class="tracking-tight text-white text-lg mb-8 max-w-md">Empowering Entrepreneurs with Digital Awareness</p>
+                  
+              </div>
+              <div class="hidden md:block absolute bottom-8 right-8">
+                  <img style="height:200px;" src="consulty-assets/headers/arrow-circle2.svg" alt="">
+              </div>
+          </div>
+      </section>
+                
+      <section class="px-8 md:px-24 py-40 bg-gray-50">
+          <div class="bg-white rounded-2xl">
+              <div class="flex flex-wrap">
+                  <div class="w-full lg:w-1/3">
+                      <img class="w-full h-full rounded-tl-2xl rounded-bl-none lg:rounded-bl-2xl rounded-tr-2xl lg:rounded-tr-none object-cover" src="consulty-assets/work/picture13.png" alt="">
+                  </div>
+                  <div class="w-full lg:w-2/3">
+                      <div class="py-16 px-8 md:px-24">
+                          
+                          <h1 class="font-heading tracking-tight text-4xl md:text-5xl font-medium max-w-xl mb-5">DACE is offered completely free of charge as a social service to support the business community in India.</h1>
+                          <p class="text-xl tracking-tight mb-8 max-w-lg">The Digital Awareness Certificate for Entrepreneurs (DACE) is a comprehensive program designed for entrepreneurs who aim to integrate essential digital technologies into their business operations. Owned and operated by LiveAs Technologies, a leader in digital transformation, this initiative focuses on empowering Indian businesses with the tools and knowledge necessary for growth and scalability.</p>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+                
+      <section class="px-8 md:px-24 py-32">
+          <div class="relative mb-6" style="height:505px;">
+              <img class="absolute inset-0 w-full h-full object-cover rounded-2xl" src="images/photo-1576485436509-a7d286952b65-1718441687372.webp" alt="">
+              <div class="absolute left-8 bottom-8 md:left-14 md:bottom-14">
+                  <h1 class="font-heading tracking-tight text-white text-4xl md:text-5xl lg:text-6xl font-medium max-w-sm md:max-w-xl lg:max-w-2xl">We are LiveAs, transforming 100+ business digitally, Expertise knowledge sharing</h1>
+              </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+              <div class="w-full lg:w-1/3 p-4">
+                  <div class="bg-gray-50 rounded-2xl p-10 h-full">
+                      <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-10">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="">
+        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+      </svg>
+      
+                      </div>
+                      <p class="tracking-tight text-xl font-semibold mb-4">40+ Modules</p>
+                      <p class="tracking-tight text-gray-700 max-w-xs">A lot to learn, it takes time, slowly learn and get yourself confident in the technology part for your business. You can't be cheated by anyone.</p>
+                  </div>
+              </div>
+              <div class="w-full lg:w-1/3 p-4">
+                  <div class="bg-gray-50 rounded-2xl p-10 h-full">
+                      <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-10">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+      </svg>
+      
+                      </div>
+                      <p class="tracking-tight text-xl font-semibold mb-4">Regular Assessment to filter</p>
+                      <p class="tracking-tight text-gray-700 max-w-xs">We assess the genuinity of the participants and filter those who not taking part this activity seriously. This is to ensure quality of the DACE program of LiveAs</p>
+                  </div>
+              </div>
+              <div class="w-full lg:w-1/3 p-4">
+                  <div class="bg-gray-50 rounded-2xl p-10 h-full">
+                      <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-10">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+      </svg>
+      
+                      </div>
+                      <p class="tracking-tight text-xl font-semibold mb-4">Certification</p>
+                      <p class="tracking-tight text-gray-700 max-w-xs">You will be certified by LiveAs once we are confident that you gain the knowledge correctly.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+                
+      <section class="pt-24 pb-40 bg-black">
+          <div class="container mx-auto px-4">
+              <h1 class="tracking-tight font-heading text-center text-white text-4xl md:text-6xl font-medium mb-4">How this works</h1>
+              <p class="tracking-tight text-center text-gray-200 text-lg max-w-lg mx-auto mb-16">So simple, Free, Gain correct knowledge &amp; make our India better!</p>
+              <div class="flex flex-wrap -m-4">
+                  <div class="w-full lg:w-1/3 p-4">
+                      <div class="bg-gray-900 rounded-2xl border border-gray-800 px-9 py-7">
+                          <div class="bg-white bg-opacity-10 rounded-lg w-10 h-10 flex items-center justify-center mb-28">
+                              <span class="tracking-tight font-semibold text-white">1</span>
+                          </div>
+                          <p class="tracking-tight text-white text-xl font-semibold max-w-xs">Free Registration</p>
+                      </div>
+                  </div>
+                  <div class="w-full lg:w-1/3 p-4">
+                      <div class="rounded-2xl border border-gray-700 px-9 py-7 relative overflow-hidden">
+                          <img class="absolute top-0 right-0 rounded-tr-2xl" src="consulty-assets/how-it-works/shapes.svg" alt="">
+                          <div class="bg-white bg-opacity-10 rounded-lg w-10 h-10 flex items-center justify-center mb-28">
+                              <span class="tracking-tight font-semibold text-white">2</span>
+                          </div>
+                          <p class="tracking-tight text-white text-xl font-semibold max-w-xs">Class via WhatsApp Channel and  email</p>
+                      </div>
+                  </div>
+                  <div class="w-full lg:w-1/3 p-4">
+                      <div class="bg-gray-900 rounded-2xl border border-gray-800 px-9 py-7">
+                          <div class="bg-white bg-opacity-10 rounded-lg w-10 h-10 flex items-center justify-center mb-28">
+                              <span class="tracking-tight font-semibold text-white">3</span>
+                          </div>
+                          <p class="tracking-tight text-white text-xl font-semibold max-w-xs">Attend online exam and get certified</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+                
+      <section class="py-24 px-8 md:px-24">
+          <div class="flex flex-wrap -m-4">
+              <div class="w-full lg:w-1/2 p-4">
+                  <p class="mb-4 tracking-tight">Here it is for your reference</p>
+                  <h1 class="text-4xl md:text-6xl font-medium tracking-tight mb-16 max-w-xs md:max-w-lg">Sample Certificate and Syllabus</h1>
+                  <img class="rounded-2xl lg:ml-auto object-cover" style="height:419px;" src="images/DACE.png" alt="">
+              </div>
+              <div class="w-full lg:w-1/2 p-4">
+                  <img class="rounded-2xl mb-20 object-cover object-right" style="height:516px;" src="images/syll.jpg" alt="">
+                  <p class="tracking-tight text-lg max-w-lg">This certificate acknowledges participation in a program conducted by LiveAs, dedicated to fostering the adoption of digital technology among small and medium industries in India. By igniting aspirations and facilitating scaling up, we aim to catalyze growth and resilience in the entrepreneurial ecosystem.</p>
+              </div>
+              <div class="container">
+                  
+                <a href="https://techsolutions.liveas.in/dace/index.php" class="border border-gray-200 px-5 hover:bg-gray-50 focus:ring-4 focus:ring-gray-200 hidden xl:inline-flex items-center justify-center gap-2 transition duration-200 py-3 bg-orange-400">
+                    <span class="text-sm font-semibold tracking-tight text-white">REGISTER</span></a>
+            
+            </div>
+            
+
+                
+          </div>
+          
+      </section>
+
+
+
+                
+      <div class="bg-black relative">
+          <img class="w-full object-cover" style="height:658px;" src="https://images.unsplash.com/photo-1612687286248-9811801bd618?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBidXNpbmVzc3xlbnwwfHx8fDE3MTg0NDA5ODZ8MA&amp;ixlib=rb-4.0.3&amp;q=85&amp;w=1920" alt="">
+          <div class="container mx-auto px-4">
+              <div class="flex flex-wrap -mx-4">
+                  <div class="w-full sm:w-1/2 lg:w-2/6 px-4">
+                      <div class="pb-8 sm:border-r border-gray-900 pt-5">
+                          <img class="h-11 mb-10" src="images/DACE-1-png-1718440532662.webp" alt="">
+                          <p class="text-gray-200 tracking-tight max-w-xs mb-8">Join the DACE program today and take the first step towards digitally transforming your business. Feel proud to be part of this great initiative and gain a clear understanding of how technology can enhance your business operations.</p>
+                          <p class="tracking-tight text-gray-400 text-sm">© 2023 All Rights Reserved  by LIVEAS</p>
+                      </div>
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/6 px-4">
+                      
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/6 px-4">
+                      
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/6 px-4">
+                      
+                  </div>
+                  <div class="w-full sm:w-1/2 lg:w-1/6 px-4">
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="absolute right-8 bottom-16">
+              <a href="#" class="bg-orange-400 rounded-lg w-12 h-12 flex items-center justify-center hover:bg-orange-500 focus:bg-orange-500 transition duration-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                      <path d="M3.33331 6.66667L7.99998 2M7.99998 2L12.6666 6.66667M7.99998 2L7.99998 14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+              </a>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
+
